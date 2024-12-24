@@ -3,7 +3,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -g
 
 # Target executable
-TARGET = 74
+TARGET = 278
 
 # Source files and corresponding object files
 SRCS = $(TARGET).c
