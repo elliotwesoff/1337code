@@ -6,15 +6,7 @@ pub struct Solution217 {
 impl Solution217 {
     pub fn contains_duplicate(nums: Vec<i32>) -> bool {
         let mut hs: HashSet<i32> = HashSet::new();
-
-        for n in nums {
-            if hs.contains(&n) {
-                return true;
-            }
-            hs.insert(n);
-        }
-
-        return false;
+        nums.into_iter().any(|n| !hs.insert(n))
     }
 
     pub fn run() {
