@@ -10,3 +10,4 @@ gdb.txt
 
 # rust
 rust/target/*
+rust/.idea
