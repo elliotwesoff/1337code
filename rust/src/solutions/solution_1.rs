@@ -1,7 +1,7 @@
 fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
     for (i, a) in nums.iter().enumerate() {
         for (j, b) in nums.iter().enumerate() {
-            if a + b == target  && i != j {
+            if a + b == target && i != j {
                 return vec![i.try_into().unwrap(), j.try_into().unwrap()];
             }
         }
@@ -33,9 +33,8 @@ mod tests {
     #[test]
     fn test_two_sum_3() {
         let i = vec![3, 3];
-        let t= 6;
+        let t = 6;
         let r = two_sum(i, t);
         assert_eq!(vec![0, 1], r);
     }
 }
-
