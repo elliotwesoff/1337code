@@ -1,4 +1,6 @@
 mod solution_1;
+mod solution_11;
+mod solution_12;
 mod solution_21;
 mod solution_27;
 mod solution_28;
@@ -17,3 +19,4 @@ mod solution_509;
 mod solution_746;
 mod solution_1025;
 mod solution_1137;
+mod solution_1668;
