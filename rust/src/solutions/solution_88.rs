@@ -27,11 +27,11 @@ mod tests {
 
     #[test]
     fn test_merge() {
-        let mut l1 = vec![1,2,3,0,0,0];
+        let mut l1 = vec![1, 2, 3, 0, 0, 0];
         let m = 3;
-        let mut l2 = vec![2,5,6];
+        let mut l2 = vec![2, 5, 6];
         let n = 3;
-        let expected = vec![1,2,2,3,5,6];
+        let expected = vec![1, 2, 2, 3, 5, 6];
 
         merge(&mut l1, m, &mut l2, n);
 
@@ -40,11 +40,11 @@ mod tests {
 
     #[test]
     fn test_merge_2() {
-        let mut l1 = vec![-1,0,0,3,3,3,0,0,0];
+        let mut l1 = vec![-1, 0, 0, 3, 3, 3, 0, 0, 0];
         let m = 6;
-        let mut l2 = vec![1,2,2];
+        let mut l2 = vec![1, 2, 2];
         let n = 3;
-        let expected = vec![-1,0,0,1,2,2,3,3,3];
+        let expected = vec![-1, 0, 0, 1, 2, 2, 3, 3, 3];
 
         merge(&mut l1, m, &mut l2, n);
 

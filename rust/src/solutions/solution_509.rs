@@ -3,7 +3,7 @@ fn fib(n: i32) -> i32 {
         match a {
             0 => 0,
             1 => 1,
-            b => _fib(b - 2) + _fib(b - 1)
+            b => _fib(b - 2) + _fib(b - 1),
         }
     }
 

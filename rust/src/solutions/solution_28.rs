@@ -6,7 +6,7 @@ fn str_str(haystack: String, needle: String) -> i32 {
     if haystack_len == needle_len {
         return match haystack == needle {
             true => 0,
-            false => -1
+            false => -1,
         };
     }
 
@@ -51,11 +51,7 @@ mod tests {
     }
     #[test]
     fn test_str_str_3() {
-        assert_eq!(
-            str_str("a".to_string(), "a".to_string()),
-            0,
-            "uh oh!"
-        );
+        assert_eq!(str_str("a".to_string(), "a".to_string()), 0, "uh oh!");
     }
     #[test]
     fn test_str_str_4() {

@@ -2,7 +2,7 @@ fn tribonacci(n: i32) -> i32 {
     match n {
         0 => return 0,
         1 | 2 => return 1,
-        _ => ()
+        _ => (),
     }
 
     let mut prev0 = 0;

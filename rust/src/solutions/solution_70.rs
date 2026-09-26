@@ -9,7 +9,7 @@ fn climbing_stairs(n: i32) -> i32 {
 
     fn _climbing_stairs(n: i32, memo: &mut HashMap<i32, i32>) -> i32 {
         if memo.contains_key(&n) {
-            return memo[&n]
+            return memo[&n];
         }
 
         let count = _climbing_stairs(n - 1, memo) + _climbing_stairs(n - 2, memo);
@@ -27,7 +27,7 @@ fn climbing_stairs2(n: i32) -> i32 {
     let mut prev2 = 1;
     let mut prev = 1;
     let mut count = 0;
-    
+
     for _ in 2..=n {
         count = prev2 + prev;
         prev2 = prev;

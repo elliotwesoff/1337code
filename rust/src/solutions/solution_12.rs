@@ -29,7 +29,6 @@ pub fn int_to_roman(num: i32) -> String {
     s
 }
 
-
 #[cfg(test)]
 mod tests {
     use crate::solutions::solution_12::int_to_roman;

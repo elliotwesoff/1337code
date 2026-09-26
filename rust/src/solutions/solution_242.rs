@@ -18,7 +18,7 @@ fn is_anagram(s: String, t: String) -> bool {
                 if s_count != t_count {
                     return false;
                 }
-            },
+            }
             None => {
                 return false;
             }
@@ -31,7 +31,7 @@ fn is_anagram(s: String, t: String) -> bool {
                 if s_count != t_count {
                     return false;
                 }
-            },
+            }
             None => {
                 return false;
             }

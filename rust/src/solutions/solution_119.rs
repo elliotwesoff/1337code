@@ -2,7 +2,7 @@ fn get_row(row_index: i32) -> Vec<i32> {
     match row_index {
         0 => return vec![1],
         1 => return vec![1, 1],
-        _ => ()
+        _ => (),
     }
 
     let mut row = Vec::with_capacity(row_index as usize + 1);
@@ -36,16 +36,16 @@ mod tests {
 
     #[test]
     fn test_get_row_2() {
-        assert_eq!([1,1], *get_row(1));
+        assert_eq!([1, 1], *get_row(1));
     }
 
     #[test]
     fn test_get_row_3() {
-        assert_eq!([1,3,3,1], *get_row(3));
+        assert_eq!([1, 3, 3, 1], *get_row(3));
     }
 
     #[test]
     fn test_get_row_4() {
-        assert_eq!([1,4,6,4,1], *get_row(4));
+        assert_eq!([1, 4, 6, 4, 1], *get_row(4));
     }
 }

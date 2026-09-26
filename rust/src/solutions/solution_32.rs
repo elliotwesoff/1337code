@@ -2,21 +2,15 @@ use std::collections::VecDeque;
 
 fn descend(deq: &mut VecDeque<char>) -> i32 {
     match deq.pop_front() {
-        Some(c) => {
-            match c {
-                '(' => {
-                    let result = descend(deq);
-                    if result % 2 == 0 {
-                        result
-                    } else {
-                        0
-                    }
-                },
-                ')' => 1,
-                _ => panic!("huh?")
+        Some(c) => match c {
+            '(' => {
+                let result = descend(deq);
+                if result % 2 == 0 { result } else { 0 }
             }
+            ')' => 1,
+            _ => panic!("huh?"),
         },
-        None => 0
+        None => 0,
     }
 }
 

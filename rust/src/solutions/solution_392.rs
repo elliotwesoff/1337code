@@ -4,19 +4,17 @@ fn is_subsequence(s: String, t: String) -> bool {
 
     loop {
         match s_chars.peek() {
-            Some(&sc) => {
-                match t_chars.peek() {
-                    Some(&tc) => {
-                        if sc == tc {
-                            s_chars.next();
-                        }
+            Some(&sc) => match t_chars.peek() {
+                Some(&tc) => {
+                    if sc == tc {
+                        s_chars.next();
+                    }
 
-                        t_chars.next();
-                    },
-                    None => return false
+                    t_chars.next();
                 }
+                None => return false,
             },
-            None => return true
+            None => return true,
         }
     }
 }
@@ -24,7 +22,8 @@ fn is_subsequence(s: String, t: String) -> bool {
 // AI refactor
 fn is_subsequence_ai(s: String, t: String) -> bool {
     let mut t_chars = t.chars();
-    s.chars().all(|s_char| t_chars.any(|t_char| t_char == s_char))
+    s.chars()
+        .all(|s_char| t_chars.any(|t_char| t_char == s_char))
 }
 
 #[cfg(test)]

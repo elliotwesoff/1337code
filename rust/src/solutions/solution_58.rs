@@ -32,5 +32,4 @@ mod tests {
         let output: i32 = 6;
         assert_eq!(output, length_of_last_word(input));
     }
-
 }

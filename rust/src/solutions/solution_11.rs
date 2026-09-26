@@ -26,13 +26,13 @@ mod tests {
 
     #[test]
     fn test_max_area_1() {
-        let height = vec![1,8,6,2,5,4,8,3,7];
+        let height = vec![1, 8, 6, 2, 5, 4, 8, 3, 7];
         assert_eq!(49, max_area(height));
     }
 
     #[test]
     fn test_max_area_2() {
-        let height = vec![1,1];
+        let height = vec![1, 1];
         assert_eq!(1, max_area(height));
     }
 }

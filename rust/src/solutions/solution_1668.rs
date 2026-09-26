@@ -107,12 +107,17 @@ mod tests {
 
     #[test]
     fn test_max_repeating_6() {
-        assert_eq!(5, max_repeating(String::from("aaabaaaabaaabaaaabaaaabaaaabaaaaba"), String::from("aaaba")));
+        assert_eq!(
+            5,
+            max_repeating(
+                String::from("aaabaaaabaaabaaaabaaaabaaaabaaaaba"),
+                String::from("aaaba")
+            )
+        );
     }
 
     #[test]
     fn test_max_repeating_7() {
         assert_eq!(0, max_repeating(String::from("a"), String::from("b")));
     }
-
 }

@@ -27,21 +27,24 @@ mod tests {
 
     #[test]
     fn test_count_bits_2() {
-        assert_eq!([0,1], *count_bits(1));
+        assert_eq!([0, 1], *count_bits(1));
     }
 
     #[test]
     fn test_count_bits_3() {
-        assert_eq!([0,1,1], *count_bits(2));
+        assert_eq!([0, 1, 1], *count_bits(2));
     }
 
     #[test]
     fn test_count_bits_4() {
-        assert_eq!([0,1,1,2,1,2], *count_bits(5));
+        assert_eq!([0, 1, 1, 2, 1, 2], *count_bits(5));
     }
 
     #[test]
     fn test_count_bits_5() {
-        assert_eq!([0,1,1,2,1,2,2,3,1,2,2,3,2,3,3,4,1], *count_bits(16));
+        assert_eq!(
+            [0, 1, 1, 2, 1, 2, 2, 3, 1, 2, 2, 3, 2, 3, 3, 4, 1],
+            *count_bits(16)
+        );
     }
 }
